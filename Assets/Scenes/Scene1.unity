@@ -467,6 +467,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2215afa364692429453b85b397b467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationEvents
+--- !u!1 &1298955036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1298955037}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1298955037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298955036}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8, y: -2.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1782095094}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1382737209
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,10 +645,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1478203399}
+  - component: {fileID: 1478203400}
   - component: {fileID: 1478203398}
-  - component: {fileID: 1478203397}
   - component: {fileID: 1478203396}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,18 +701,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1478203397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1478203395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59d4f946a80f3f46a6123805f245540, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enemy
 --- !u!212 &1478203398
 SpriteRenderer:
   serializedVersion: 2
@@ -756,6 +775,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1478203400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478203395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59d4f946a80f3f46a6123805f245540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  damageColorDuration: 2
+  currentTimeInGame: 0
+  lastTimeDamaged: 0
 --- !u!1 &1782095091
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +852,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 677305239}
+  - {fileID: 1298955037}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1782095096
@@ -834,7 +869,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   jumpForce: 8.91
   moveSpeed: 6.5
-  colliders: []
+  attackRadius: 1.54
+  attackPoint: {fileID: 1298955037}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
   groundCheckDistance: 4.05
   ground:
     serializedVersion: 2
@@ -990,5 +1029,5 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1382737211}
-  - {fileID: 1478203399}
   - {fileID: 1782095094}
+  - {fileID: 1478203399}

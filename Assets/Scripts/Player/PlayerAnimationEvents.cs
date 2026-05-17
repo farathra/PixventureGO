@@ -9,6 +9,11 @@ public class PlayerAnimationEvents : MonoBehaviour
         player = GetComponentInParent<Player>();
     }
 
+    public void GiveDamage()
+    {
+        player.GiveDamage();
+    }
+    
     private void AttackStarted()
     {
         player.EnableMoveNJump(false);

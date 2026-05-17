@@ -18,7 +18,10 @@ public class Player : MonoBehaviour
     private bool canMove = true;
     private bool canJump = true;
 
-    public Collider2D[] colliders;
+    [Header("Attack Details")]
+    [SerializeField] private float attackRadius;
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private LayerMask enemyLayer;
 
     [Header("Ground Check Settings")]
     [SerializeField] private float groundCheckDistance;
@@ -43,6 +46,16 @@ public class Player : MonoBehaviour
         HandleFlip();
     }
 
+
+    public void GiveDamage()
+    {
+        Collider2D[] enemyCollider = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, enemyLayer);
+
+        foreach (Collider2D enemy in enemyCollider)
+        {
+            enemy.GetComponent<Enemy>().TakeDamage();
+        }
+    }
 
     public void EnableMoveNJump(bool enable) // This method is responsible for enabling or disabling the player's ability to move and jump, it can be called from other scripts to control the player's movement and jumping capabilities
     {
@@ -101,7 +114,7 @@ public class Player : MonoBehaviour
             HandleSprint();
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.L))
         {
             Attack();
         }
@@ -152,6 +165,7 @@ public class Player : MonoBehaviour
     private void OnDrawGizmos() // This method draws a line in the editor to visualize the ground check distance
     {
         Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundCheckDistance, 0));
+        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
     }
 
     private void AnimJump() // Not used, this method is responsible for setting the appropriate animation parameters based on the player's vertical velocity and grounded state

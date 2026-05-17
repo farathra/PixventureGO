@@ -2,8 +2,35 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public void TakeDamage(int damage)
+
+    private SpriteRenderer spriteRenderer;
+    [SerializeField] private float damageColorDuration = 2;
+    public float currentTimeInGame;
+    public float lastTimeDamaged;
+
+    private void Awake()
     {
-        Debug.Log(gameObject.name + " took " + damage + " damage!");
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    public void Update()
+    {
+        currentTimeInGame = Time.time;
+
+        turnWhite();
+    }
+    
+    public void TakeDamage()
+    {
+        spriteRenderer.color = Color.red;
+        lastTimeDamaged = Time.time;
+    }
+
+    private void turnWhite()
+    {
+        if (currentTimeInGame > lastTimeDamaged + damageColorDuration && spriteRenderer.color != Color.white) 
+        {    
+            spriteRenderer.color = Color.white;
+        }
     }
 }
