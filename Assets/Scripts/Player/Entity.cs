@@ -4,30 +4,31 @@ using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-public class Player : MonoBehaviour
+public class Entity : MonoBehaviour
 {
-    // Player movement variables
-    private float xInput;
+    protected Rigidbody2D rb;
+    protected Animator anim;
+
+
     [Header("Player Movement Settings")]
+    [SerializeField] protected float moveSpeed = 6f;
     [SerializeField] private float jumpForce = 8;
-    [SerializeField] private float moveSpeed = 4f;
-    private Rigidbody2D rb;
-    private Animator anim;
+    protected int facingDirection = 1; // 1 for right, -1 for left
     private bool facingRight = true;
-    private bool isSprinting = false;
-    private bool canMove = true;
+    protected bool canMove = true;
     private bool canJump = true;
+    private float xInput;
 
     [Header("Attack Details")]
-    [SerializeField] private float attackRadius;
-    [SerializeField] private Transform attackPoint;
-    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] protected float attackRadius;
+    [SerializeField] protected Transform attackPoint;
+    [SerializeField] protected LayerMask targetLayer;
 
-    [Header("Ground Check Settings")]
+    [Header("Ground Collision")]
     [SerializeField] private float groundCheckDistance;
-    private bool isGrounded;
     [SerializeField] private LayerMask ground;
-    
+    private bool isGrounded;
+
 
     private void Awake()
     {
@@ -36,10 +37,10 @@ public class Player : MonoBehaviour
         anim.SetFloat("walkSpeed", 1);
     }
 
-    private void Update()
+    protected virtual void Update()
     {
-        GroundCheck();
-        XMovement();
+        HandleCollision();
+        HandleMovement();
         HandleInput();
         // AnimJump();
         HandleAnim();
@@ -49,16 +50,18 @@ public class Player : MonoBehaviour
 
     public void GiveDamage()
     {
-        Collider2D[] enemyCollider = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, enemyLayer);
+        Collider2D[] enemyCollider = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, targetLayer);
 
         foreach (Collider2D enemy in enemyCollider)
         {
-            Enemy enemyScript = enemy.GetComponent<Enemy>();
-            enemyScript.TakeDamage();
-
-            string enemyName = enemyScript.GetEnemyName();
-            Debug.Log("Attacked " + enemyName);
+            Entity entityTarget = enemy.GetComponent<Entity>();
+            entityTarget.TakeDamage();
         }
+    }
+
+    private void TakeDamage()
+    {
+        throw new NotImplementedException();
     }
 
     public void EnableMoveNJump(bool enable) // This method is responsible for enabling or disabling the player's ability to move and jump, it can be called from other scripts to control the player's movement and jumping capabilities
@@ -67,7 +70,7 @@ public class Player : MonoBehaviour
         canJump = enable;
     }
 
-    private void HandleAnim() // This method handles the player's animation based on their movement
+    protected void HandleAnim() // This method handles the player's animation based on their movement
     {
         bool isMoving = rb.linearVelocity.x != 0;
         anim.SetBool("isMoving", isMoving);
@@ -76,9 +79,8 @@ public class Player : MonoBehaviour
         anim.SetBool("isGrounded", isGrounded);
     }
 
-    private void XMovement() // This method is responsible for horizontal and vertical movement of the player
-    {
-        xInput = Input.GetAxisRaw("Horizontal"); 
+    protected virtual void HandleMovement() // This method is responsible for horizontal and vertical movement of the player
+    { 
         if (canMove)
         {
             rb.linearVelocity = new Vector2(xInput * moveSpeed, rb.linearVelocity.y);
@@ -101,30 +103,27 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void GroundCheck() // This method checks if the player is grounded by casting a ray downwards and checking for collisions with the ground layer
+    protected virtual void HandleCollision() // This method checks if the player is grounded by casting a ray downwards and checking for collisions with the ground layer
     {
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, ground);
     }   
 
     private void HandleInput() // This method checks if the player has pressed the jump key (Space, W, or Up Arrow)
     {
+        xInput = Input.GetAxisRaw("Horizontal");
+
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             Jump();
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
-        {
-            HandleSprint();
-        }
-
         if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.L))
         {
-            Attack();
+            HandleAttack();
         }
     }
 
-    private void Attack() // This method is responsible for making the player attack, it checks if the player is grounded and then triggers the attack animation
+    protected virtual void HandleAttack() // This method is responsible for making the player attack, it checks if the player is grounded and then triggers the attack animation
     {
         if (isGrounded)
         { 
@@ -132,23 +131,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void HandleSprint() // This method is responsible for toggling the player's sprinting state and adjusting the movement speed and animation speed accordingly
-    {
-        if (isGrounded && isSprinting == false)
-        {
-            isSprinting = true;
-            moveSpeed = 7f;
-            anim.SetFloat("walkSpeed", 1.75f);
-        }
-        else if (isGrounded || isSprinting == true)
-        {
-            isSprinting = false;
-            moveSpeed = 4f;
-            anim.SetFloat("walkSpeed", 1);
-        }
-    }
-
-    private void HandleFlip() // This method checks the player's horizontal velocity and flips the sprite if the player is moving in a different direction than they are currently facing
+    protected void HandleFlip() // This method checks the player's horizontal velocity and flips the sprite if the player is moving in a different direction than they are currently facing
     { 
         if (rb.linearVelocity.x > 0 && !facingRight)
         {
@@ -164,6 +147,7 @@ public class Player : MonoBehaviour
     {
         transform.Rotate(0, 180, 0);
         facingRight = !facingRight;
+        facingDirection = facingDirection * -1;
     }
 
     private void OnDrawGizmos() // This method draws a line in the editor to visualize the ground check distance
@@ -172,22 +156,22 @@ public class Player : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
     }
 
-    private void AnimJump() // Not used, this method is responsible for setting the appropriate animation parameters based on the player's vertical velocity and grounded state
-    {
-        if (isGrounded == false && rb.linearVelocity.y > 0)
-        {
-            anim.SetBool("isJumping", true);
-            anim.SetBool("isFalling", false);
-        }
-        else if (isGrounded == false && rb.linearVelocity.y < 0)
-        {
-            anim.SetBool("isJumping", false);
-            anim.SetBool("isFalling", true);
-        }
-        else if (isGrounded == true && rb.linearVelocity.y == 0)
-        {
-            anim.SetBool("isJumping", false);
-            anim.SetBool("isFalling", false);
-        }
-    }
+    //private void AnimJump() // Not used, this method is responsible for setting the appropriate animation parameters based on the player's vertical velocity and grounded state
+    //{
+    //    if (isGrounded == false && rb.linearVelocity.y > 0)
+    //    {
+    //        anim.SetBool("isJumping", true);
+    //        anim.SetBool("isFalling", false);
+    //    }
+    //    else if (isGrounded == false && rb.linearVelocity.y < 0)
+    //    {
+    //        anim.SetBool("isJumping", false);
+    //        anim.SetBool("isFalling", true);
+    //    }
+    //    else if (isGrounded == true && rb.linearVelocity.y == 0)
+    //    {
+    //        anim.SetBool("isJumping", false);
+    //        anim.SetBool("isFalling", false);
+    //    }
+    //}
 }

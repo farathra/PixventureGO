@@ -1,38 +1,42 @@
 using UnityEngine;
+using UnityEngine.Windows;
 
-public class Enemy : MonoBehaviour
+public class Enemy : Entity
 {
-    [SerializeField] protected float moveSpeed;
-    [SerializeField] protected string enemyName;
+    private bool playerDetected;
 
-    private void Update()
+    protected override void Update()
     {
-        Move();
+        HandleMovement();
+        HandleCollision();
+        HandleAnim();
+        HandleFlip();
+        HandleAttack();
+    }
 
-        if (Input.GetKeyDown(KeyCode.F))
+    protected override void HandleAttack()
+    {
+        if (playerDetected)
+            anim.SetTrigger("attack");
+    }
+
+    protected override void HandleCollision()
+    {
+        base.HandleCollision();
+        playerDetected = Physics2D.OverlapCircle(attackPoint.position, attackRadius, targetLayer);
+    }
+
+    protected override void HandleMovement()
+    {
+        if (canMove)
         {
-            Attack();
+            rb.linearVelocity = new Vector2(facingDirection * moveSpeed, rb.linearVelocity.y);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
     }
 
-    private void Move()
-    {
-        Debug.Log(enemyName + " moves at speed " + moveSpeed);
-    }
-
-    protected virtual void Attack()
-    {
-        Debug.Log(enemyName + " attacks");
-    }
-
-    public void TakeDamage()
-    {
-
-    }
-
-    public string GetEnemyName()
-    { 
-        return enemyName;
-    }
 }
 
