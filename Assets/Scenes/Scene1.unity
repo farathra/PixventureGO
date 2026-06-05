@@ -495,7 +495,7 @@ Transform:
   m_GameObject: {fileID: 875600259}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.51, y: 1.68, z: 0}
+  m_LocalPosition: {x: -7.85, y: -2.13, z: 0}
   m_LocalScale: {x: 3.6335094, y: 3.6335094, z: 3.6335094}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -515,9 +515,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7dd7c52d04b78449bb9ecfdeb66c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  moveSpeed: 2
+  maxHealth: 1
+  currentHealth: 0
+  damageMaterial: {fileID: 2100000, guid: 349df52eb9b240b479ad234ba03b4de3, type: 2}
+  damageDuration: 0.2
+  moveSpeed: 1.08
   jumpForce: 8
-  attackRadius: 1.65
+  attackRadius: 1.48
   attackPoint: {fileID: 1757851720}
   targetLayer:
     serializedVersion: 2
@@ -599,7 +603,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.1275114, y: 0.08790969}
+    - - {x: 0.26770812, y: 0.09222336}
+      - {x: 0.12963323, y: 0.09750775}
       - {x: 0.17239538, y: 0.18220776}
       - {x: 0.18618943, y: 0.29367712}
       - {x: 0.1274432, y: 0.40255418}
@@ -611,7 +616,8 @@ PolygonCollider2D:
       - {x: -0.22564524, y: -0.37186962}
       - {x: 0.14442404, y: -0.37204835}
       - {x: 0.14862603, y: -0.29217696}
-      - {x: 0.13885593, y: -0.08828163}
+      - {x: 0.14934368, y: -0.06890887}
+      - {x: 0.255327, y: 0.0023070201}
   m_UseDelaunayMesh: 1
 --- !u!1 &1044213462
 GameObject:
@@ -1163,7 +1169,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6a5c76b5c4a9d4aba49d9aae2fd24d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity
-  moveSpeed: 6
+  maxHealth: 5
+  currentHealth: 0
+  damageMaterial: {fileID: 2100000, guid: 349df52eb9b240b479ad234ba03b4de3, type: 2}
+  damageDuration: 0.2
+  moveSpeed: 7.7
   jumpForce: 8
   attackRadius: 1.65
   attackPoint: {fileID: 1298955037}

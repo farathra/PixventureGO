@@ -1,14 +1,20 @@
 using System;
-using Unity.VisualScripting;
-using UnityEditor.Callbacks;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 public class Entity : MonoBehaviour
 {
     protected Rigidbody2D rb;
     protected Animator anim;
+    protected Collider2D coll;
+    protected SpriteRenderer sr;
 
+    [Header("Health")]
+    [SerializeField] protected int maxHealth = 1; 
+    [SerializeField] protected int currentHealth;
+    [SerializeField] private Material damageMaterial;
+    [SerializeField] private float damageDuration = 0.2f;
+    private Coroutine damageFeedbackCoroutine;
 
     [Header("Player Movement Settings")]
     [SerializeField] protected float moveSpeed = 6f;
@@ -33,8 +39,12 @@ public class Entity : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        coll = GetComponent<Collider2D>();
         anim = GetComponentInChildren<Animator>();
+        sr = GetComponentInChildren<SpriteRenderer>();
         anim.SetFloat("walkSpeed", 1);
+
+        currentHealth = maxHealth;
     }
 
     protected virtual void Update()
@@ -48,7 +58,7 @@ public class Entity : MonoBehaviour
     }
 
 
-    public void GiveDamage()
+    public void GiveDamage() // This method is responsible for applying damage to the player, it calls the TakeDamage method to reduce the player's health and starts the damage feedback coroutine to change the player's material temporarily
     {
         Collider2D[] enemyCollider = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, targetLayer);
 
@@ -59,9 +69,45 @@ public class Entity : MonoBehaviour
         }
     }
 
-    private void TakeDamage()
+    private void TakeDamage() // This method is responsible for handling the player's health when they take damage, it reduces the player's health by 1, checks if the player has died, and starts the damage feedback coroutine to change the player's material temporarily
     {
-        throw new NotImplementedException();
+        currentHealth = currentHealth - 1;
+
+        PlayDamageFeedback();
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void PlayDamageFeedback() // This method is responsible for starting the damage feedback coroutine, it checks if there is already a damage feedback coroutine running and stops it before starting a new one to ensure that the player's material changes correctly when taking damage multiple times in quick succession
+    {
+        if (damageFeedbackCoroutine != null)
+        {
+            StopCoroutine(damageFeedbackCoroutine);
+        }
+
+        StartCoroutine(DamageFeedbackCo());
+    }
+
+    protected virtual void Die() // This method is responsible for handling the player's death, it disables the player's movement and collision, applies a knockback effect, and destroys the player object after a short delay
+    {
+        anim.enabled = false;
+        coll.enabled = false;
+
+        rb.gravityScale = 8;
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
+
+        Destroy(gameObject, 2f);
+    }
+
+    private IEnumerator DamageFeedbackCo() // This method is responsible for changing the player's material to a damage material for a short duration when they take damage, and then reverting it back to the original material
+    {
+        Material originalMaterial = sr.material;
+        sr.material = damageMaterial;
+        yield return new WaitForSeconds(damageDuration);
+        sr.material = originalMaterial;
     }
 
     public void EnableMoveNJump(bool enable) // This method is responsible for enabling or disabling the player's ability to move and jump, it can be called from other scripts to control the player's movement and jumping capabilities
