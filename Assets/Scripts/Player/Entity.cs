@@ -13,7 +13,7 @@ public class Entity : MonoBehaviour
     [SerializeField] protected int maxHealth = 1; 
     [SerializeField] protected int currentHealth;
     [SerializeField] private Material damageMaterial;
-    [SerializeField] private float damageDuration = 0.2f;
+    [SerializeField] private float damageDuration = 0.1f;
     private Coroutine damageFeedbackCoroutine;
 
     [Header("Player Movement Settings")]
