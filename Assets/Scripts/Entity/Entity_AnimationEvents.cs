@@ -16,11 +16,11 @@ public class Entity_AnimationEvents : MonoBehaviour
     
     private void AttackStarted()
     {
-        entity.EnableMoveNJump(false);
+        entity.EnableMove(false);
     }
 
     private void AttackFinished()
     {
-        entity.EnableMoveNJump(true);
+        entity.EnableMove(true);
     }
 }
