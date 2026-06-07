@@ -15,7 +15,7 @@ public class Player : Entity
         HandleInput();
     }
 
-    protected override void HandleMovement()
+    protected override void HandleMovement() // This method is responsible for moving the player left and right based on the horizontal input
     {
         if (canMove)
         {
@@ -39,7 +39,7 @@ public class Player : Entity
         }
     }
 
-    protected override void HandleAttack()
+    protected override void HandleAttack() // This method triggers the attack animation if the player is grounded
     {
         if (isGrounded)
         {
@@ -47,18 +47,18 @@ public class Player : Entity
         }
     }
 
-    protected override void HandleAnim()
+    protected override void HandleAnim() // This method updates the animator parameters based on the player's state
     {
         base.HandleAnim();
         anim.SetBool("isGrounded", isGrounded);
     }
 
-    protected override void HandleCollision()
+    protected override void HandleCollision() // This method checks if the player is grounded by casting a ray downwards
     {
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, ground);
     }
 
-    public override void EnableMove(bool enable)
+    public override void EnableMove(bool enable) // This method enables or disables the player's movement and jumping ability
     {
         base.EnableMove(enable);
         canJump = enable;

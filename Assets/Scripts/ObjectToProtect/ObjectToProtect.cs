@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ObjectToProtect : Entity
@@ -16,7 +15,7 @@ public class ObjectToProtect : Entity
         HandleFlip();
     }
 
-    protected override void HandleFlip()
+    protected override void HandleFlip() // This method checks the position of the player relative to the object and flips the object accordingly
     {
         if (player.transform.position.x > transform.position.x && !facingRight)
         {

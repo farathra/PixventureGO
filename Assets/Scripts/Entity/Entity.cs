@@ -1,9 +1,9 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
+    protected UI ui;
     protected Rigidbody2D rb;
     protected Animator anim;
     protected Collider2D coll;
@@ -32,6 +32,7 @@ public class Entity : MonoBehaviour
 
     protected virtual void Awake()
     {
+        ui = FindFirstObjectByType<UI>();
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
         anim = GetComponentInChildren<Animator>();
