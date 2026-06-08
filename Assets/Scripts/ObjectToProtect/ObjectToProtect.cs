@@ -26,4 +26,10 @@ public class ObjectToProtect : Entity
             Flip();
         }
     }
+
+    override protected void Die() // This method is responsible for handling the object's death, it triggers the game over UI and destroys the object
+    {
+        base.Die();
+        UI.instance.GameOver();
+    }
 }

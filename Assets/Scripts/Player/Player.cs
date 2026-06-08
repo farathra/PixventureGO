@@ -2,12 +2,21 @@ using UnityEngine;
 
 public class Player : Entity
 {
+    public static Player instance;
+
     [Header("Player Movement Settings")]
     [SerializeField] protected float moveSpeed = 6f;
     [SerializeField] private float jumpForce = 8;
     private float xInput;
     private bool isGrounded;
     private bool canJump = true;
+
+
+    protected override void Awake()
+    {
+        base.Awake();
+        instance = this;
+    }
 
     protected override void Update()
     {
@@ -77,5 +86,12 @@ public class Player : Entity
         {
             HandleAttack();
         }
+    }
+
+    protected override void Die()
+    {
+        base.Die();
+        EnableMove(false);
+        UI.instance.GameOver();
     }
 }
