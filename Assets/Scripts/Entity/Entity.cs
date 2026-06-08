@@ -30,6 +30,7 @@ public class Entity : MonoBehaviour
     [SerializeField] protected LayerMask ground;
 
 
+
     protected virtual void Awake()
     {
         ui = FindFirstObjectByType<UI>();

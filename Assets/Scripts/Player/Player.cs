@@ -10,12 +10,16 @@ public class Player : Entity
     private float xInput;
     private bool isGrounded;
     private bool canJump = true;
+    private float defaultMoveSpeed;
+    private float defaultJumpForce;
 
 
     protected override void Awake()
     {
         base.Awake();
         instance = this;
+        defaultMoveSpeed = moveSpeed;
+        defaultJumpForce = jumpForce;
     }
 
     protected override void Update()
@@ -93,5 +97,17 @@ public class Player : Entity
         base.Die();
         EnableMove(false);
         UI.instance.GameOver();
+    }
+
+    public void StopMoveAndJump()
+    {
+        moveSpeed = 0f;
+        jumpForce = 0f;
+    }
+
+    public void ResetMoveAndJump()
+    {
+        moveSpeed = defaultMoveSpeed;
+        jumpForce = defaultJumpForce;
     }
 }

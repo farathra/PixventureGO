@@ -2,9 +2,19 @@ using UnityEngine;
 
 public class Enemy : Entity
 {
+    public static Enemy instance;
+
     private bool playerDetected;
     [Header("Player Movement Settings")]
     [SerializeField] protected float moveSpeed = 6f;
+    private float defaultMoveSpeed;
+
+    override protected void Awake()
+    {
+        base.Awake();
+        defaultMoveSpeed = moveSpeed;
+        instance = this;
+    }
 
     protected override void Update()
     {
@@ -42,5 +52,14 @@ public class Enemy : Entity
         UI.instance.AddKillCount();
     }
 
+    public void ResetMove() // This method can be called from other scripts to reset the enemy's move speed to its default value
+    {
+        moveSpeed = defaultMoveSpeed;
+    }   
+
+    public void StopMove()
+    {
+        moveSpeed = 0f;
+    }
 }
 
