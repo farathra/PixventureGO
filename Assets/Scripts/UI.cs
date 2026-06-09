@@ -9,14 +9,17 @@ public class UI : MonoBehaviour
     [Header("UI Elements")]
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private GameObject HowToPlayUI;
     [SerializeField] private TextMeshProUGUI timeStatsText;
     [SerializeField] private TextMeshProUGUI killStatsText;
     [Space]
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI killCountText;
     private int killCount = 0;
-    bool gameOver = false;
+    private bool gameOver = false;
     private bool paused = false;
+    private bool howToPlayActive = false;
+    private bool firstLoad;
 
 
     private void Awake()
@@ -27,7 +30,13 @@ public class UI : MonoBehaviour
         timeText.text = 0.00f.ToString("F2") + "s";
         gameOver = false;
         paused = false;
+        firstLoad = true;
         EntityMoveAndJump(true);
+    }
+
+    private void Start()
+    {
+        HowToPlay();
     }
 
     private void Update()
@@ -71,10 +80,13 @@ public class UI : MonoBehaviour
 
     public void PauseGame()
     {
-        paused = true;
-        Time.timeScale = 0;
-        EntityMoveAndJump(false);
-        pauseMenuUI.SetActive(true);
+        if (!gameOver && !howToPlayActive)
+        {
+            paused = true;
+            Time.timeScale = 0;
+            EntityMoveAndJump(false);
+            pauseMenuUI.SetActive(true);
+        }
     }
 
     public void ResumeGame()
@@ -97,17 +109,53 @@ public class UI : MonoBehaviour
         }
     }
 
-    private void EntityMoveAndJump(bool enable)
+    private void HowToPlay()
     {
-        if (enable)
+        //if (firstLoad)
+        //{
+        //    Time.timeScale = 0;
+        //    HowToPlayUI.SetActive(true);
+        //    howToPlayActive = true;
+        //}
+        //else
+        //{
+        //    Time.timeScale = 1;
+        //    HowToPlayUI.SetActive(false);
+        //    howToPlayActive = false;
+        //}
+    }
+
+    public void PlayGame()
+    {
+        HowToPlayUI.SetActive(false);
+        Time.timeScale = 1;
+        howToPlayActive = false;
+        firstLoad = false;
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if (!focus && !gameOver)
         {
-            Player.instance.ResetMoveAndJump();
-            Enemy.instance.ResetMove();
+            PauseGame();
         }
         else
         {
-            Player.instance.StopMoveAndJump();
-            Enemy.instance.StopMove();
+            ResumeGame();
         }
+    }
+
+    private void EntityMoveAndJump(bool enable)
+    {
+        //if (enable)
+        //{
+        //    Player.instance.ResetMoveAndJump();
+        //    Enemy.instance.ResetMove();
+        //}
+        //else
+        //{
+        //    Player.instance.StopMoveAndJump();
+        //    Enemy.instance.StopMove();
+        //}
     }
 }

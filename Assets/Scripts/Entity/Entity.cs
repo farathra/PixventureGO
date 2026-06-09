@@ -140,7 +140,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    protected void Flip() // This method flips the player's sprite horizontally when changing direction
+    public void Flip() // This method flips the player's sprite horizontally when changing direction
     {
         transform.Rotate(0, 180, 0);
         facingRight = !facingRight;
