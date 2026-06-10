@@ -26,6 +26,7 @@ public class Player : Entity
     {
         base.Update();
         HandleInput();
+        SendHealthInfo();
     }
 
     protected override void HandleMovement() // This method is responsible for moving the player left and right based on the horizontal input
@@ -109,5 +110,10 @@ public class Player : Entity
     {
         moveSpeed = defaultMoveSpeed;
         jumpForce = defaultJumpForce;
+    }
+
+    public int SendHealthInfo()
+    {
+        return currentHealth;
     }
 }

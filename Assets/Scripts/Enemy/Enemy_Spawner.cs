@@ -22,7 +22,10 @@ public class Enemy_Spawner : MonoBehaviour
         if (timer <= 0)
         {
             timer = cooldown;
-            SpawnEnemy();
+            if (player != null)
+            {
+                SpawnEnemy();
+            }
             
             if (cooldown > cooldownCap)
             {

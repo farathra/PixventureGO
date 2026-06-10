@@ -16,7 +16,7 @@ public class UI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI killCountText;
     private int killCount = 0;
-    private bool gameOver = false;
+    public bool gameOver = false;
     private bool paused = false;
     private bool howToPlayActive = false;
     private bool firstLoad;
