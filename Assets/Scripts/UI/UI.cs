@@ -34,11 +34,6 @@ public class UI : MonoBehaviour
         EntityMoveAndJump(true);
     }
 
-    private void Start()
-    {
-        HowToPlay();
-    }
-
     private void Update()
     {
         HandleInput();
@@ -109,22 +104,6 @@ public class UI : MonoBehaviour
         }
     }
 
-    private void HowToPlay()
-    {
-        //if (firstLoad)
-        //{
-        //    Time.timeScale = 0;
-        //    HowToPlayUI.SetActive(true);
-        //    howToPlayActive = true;
-        //}
-        //else
-        //{
-        //    Time.timeScale = 1;
-        //    HowToPlayUI.SetActive(false);
-        //    howToPlayActive = false;
-        //}
-    }
-
     public void PlayGame()
     {
         HowToPlayUI.SetActive(false);
@@ -157,5 +136,11 @@ public class UI : MonoBehaviour
         //    Player.instance.StopMoveAndJump();
         //    Enemy.instance.StopMove();
         //}
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 0;
+        SceneManager.LoadScene(0);
     }
 }

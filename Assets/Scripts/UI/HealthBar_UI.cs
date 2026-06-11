@@ -7,6 +7,7 @@ public class HealthBar_UI : MonoBehaviour
     //private ObjectToProtect objectToProtect;
     //private UI ui;
 
+    public static HealthBar_UI instance;
 
     [Header("Player Health Bar")]
     [SerializeField] private GameObject playerHealthBar4;
@@ -25,6 +26,7 @@ public class HealthBar_UI : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
         playerHealthBar4.SetActive(false);
         playerHealthBar3.SetActive(false);
         playerHealthBar2.SetActive(false);
@@ -137,5 +139,22 @@ public class HealthBar_UI : MonoBehaviour
                 objectToProtectHealthBar0.SetActive(true);
             }
         }
+    }
+
+    public void PlayerDie()
+    {
+        playerHealthBar4.SetActive(false);
+        playerHealthBar3.SetActive(false);
+        playerHealthBar2.SetActive(false);
+        playerHealthBar1.SetActive(false);
+        playerHealthBar0.SetActive(true);
+    }
+
+    public void ObjectToProtectDie()
+    {
+        objectToProtectHealthBar3.SetActive(false);
+        objectToProtectHealthBar2.SetActive(false);
+        objectToProtectHealthBar1.SetActive(false);
+        objectToProtectHealthBar0.SetActive(true);
     }
 }

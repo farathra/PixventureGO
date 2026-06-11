@@ -96,6 +96,7 @@ public class Player : Entity
     protected override void Die()
     {
         base.Die();
+        HealthBar_UI.instance.PlayerDie();
         EnableMove(false);
         UI.instance.GameOver();
     }
