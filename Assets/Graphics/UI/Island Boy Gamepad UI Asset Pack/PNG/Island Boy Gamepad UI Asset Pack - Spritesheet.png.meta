@@ -1,0 +1,1729 @@
+fileFormatVersion: 2
+guid: df02716daf8339c448a1ddf3557e9408
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5349864409721220315
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_0
+  - first:
+      213: -6954446925853019393
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_1
+  - first:
+      213: -2795388937399309878
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_2
+  - first:
+      213: 7196728484568688956
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_3
+  - first:
+      213: -8904032892093709174
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_4
+  - first:
+      213: 8143125637694737132
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_5
+  - first:
+      213: 5432319968221727640
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_6
+  - first:
+      213: -7979767539222140517
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_7
+  - first:
+      213: -54944004532949578
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_8
+  - first:
+      213: 3638499458177152984
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_9
+  - first:
+      213: 2416468348174570848
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_10
+  - first:
+      213: 7880863631142155300
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_11
+  - first:
+      213: 8542151441407456070
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_12
+  - first:
+      213: -3520351449776927379
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_13
+  - first:
+      213: 5164878105857135369
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_14
+  - first:
+      213: 5403009968649098294
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_15
+  - first:
+      213: -3032899569592046070
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_16
+  - first:
+      213: 7516911407037089997
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_17
+  - first:
+      213: 3274433850119160325
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_18
+  - first:
+      213: -5075258089354014973
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_19
+  - first:
+      213: 7082397087721243148
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_20
+  - first:
+      213: -3323387418821176351
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_21
+  - first:
+      213: -8947611778237512084
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_22
+  - first:
+      213: -5324272151201522881
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_23
+  - first:
+      213: -2619863288875016980
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_24
+  - first:
+      213: 1640972898074324588
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_25
+  - first:
+      213: -959869392678548430
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_26
+  - first:
+      213: -1469662537857035148
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_27
+  - first:
+      213: -4544358449661236774
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_28
+  - first:
+      213: 306411753352230039
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_29
+  - first:
+      213: -142606020187118509
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_30
+  - first:
+      213: 7401576310962892347
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_31
+  - first:
+      213: 1292713836047915381
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_32
+  - first:
+      213: -7569222935581287713
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_33
+  - first:
+      213: -4251935356661735395
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_34
+  - first:
+      213: -1811342384427041665
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_35
+  - first:
+      213: -1508319294669333014
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_36
+  - first:
+      213: 7301166354099028362
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_37
+  - first:
+      213: 1090163209633368935
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_38
+  - first:
+      213: -4674666430808406287
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_39
+  - first:
+      213: 8781435404313207572
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_40
+  - first:
+      213: -2800826835430805087
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_41
+  - first:
+      213: 1838797046952256710
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_42
+  - first:
+      213: 3496074005551485616
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_43
+  - first:
+      213: 4076040272258382321
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_44
+  - first:
+      213: 5112277649430847990
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_45
+  - first:
+      213: -7769090212985273588
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_46
+  - first:
+      213: 2926371651018302046
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_47
+  - first:
+      213: 527331904423720551
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_48
+  - first:
+      213: 2349029483047337556
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_49
+  - first:
+      213: 1961779480579203512
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_50
+  - first:
+      213: -3247967962107252898
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_51
+  - first:
+      213: -5209419407930049692
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_52
+  - first:
+      213: -6241449939025539444
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_53
+  - first:
+      213: 7534651565700803978
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_54
+  - first:
+      213: -3531767586195547875
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_55
+  - first:
+      213: -475417967381862672
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_56
+  - first:
+      213: -1424424508887892843
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_57
+  - first:
+      213: -7258602460782592316
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_58
+  - first:
+      213: -195418077843445434
+    second: Island Boy Gamepad UI Asset Pack - Spritesheet_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc20f9f5598e3a40800000000000000
+      internalID: 5349864409721220315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2393ffd57dc7f90800000000000000
+      internalID: -6954446925853019393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9e1417298c439d0800000000000000
+      internalID: -2795388937399309878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39e6a34d6aefd360800000000000000
+      internalID: 7196728484568688956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 7
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a844c5e92458e6480800000000000000
+      internalID: -8904032892093709174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 7
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceacb249f91320170800000000000000
+      internalID: 8143125637694737132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 9
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b0e1cba3a736b40800000000000000
+      internalID: 5432319968221727640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 9
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99a872a3bb224190800000000000000
+      internalID: -7979767539222140517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 0
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bda64f08bccc3ff0800000000000000
+      internalID: -54944004532949578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 0
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7b918cafb8e7230800000000000000
+      internalID: 3638499458177152984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0659befd825098120800000000000000
+      internalID: 2416468348174570848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424f589c7b37e5d60800000000000000
+      internalID: 7880863631142155300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 5
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643beaa4a71db8670800000000000000
+      internalID: 8542151441407456070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 5
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6dc38f0203352fc0800000000000000
+      internalID: -3520351449776927379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 7
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9039ec7c5455da740800000000000000
+      internalID: 5164878105857135369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 7
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634593ba0f85bfa40800000000000000
+      internalID: 5403009968649098294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 0
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ee70319e9f8e5d0800000000000000
+      internalID: -3032899569592046070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 0
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc80780391f615860800000000000000
+      internalID: 7516911407037089997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5020edcec30217d20800000000000000
+      internalID: 3274433850119160325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f40a858af0199b0800000000000000
+      internalID: -5075258089354014973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 3
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02c2eb80aab94260800000000000000
+      internalID: 7082397087721243148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 3
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3592a20c4f0e1d0800000000000000
+      internalID: -3323387418821176351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 5
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c664d028e72b3d380800000000000000
+      internalID: -8947611778237512084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 5
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3bd02c00b26c16b0800000000000000
+      internalID: -5324272151201522881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 0
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec948a283064abd0800000000000000
+      internalID: -2619863288875016980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 0
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e63c31828e5c610800000000000000
+      internalID: 1640972898074324588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c00aa7fdbdda2f0800000000000000
+      internalID: -959869392678548430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474155b55b5ba9be0800000000000000
+      internalID: -1469662537857035148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 7
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9a5eb21123fe0c0800000000000000
+      internalID: -4544358449661236774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 7
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7947091cdd7904400800000000000000
+      internalID: 306411753352230039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 9
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3542ae7849c550ef0800000000000000
+      internalID: -142606020187118509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 9
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ea3e8807ea7b660800000000000000
+      internalID: 7401576310962892347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 0
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5795ed18264a0f110800000000000000
+      internalID: 1292713836047915381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 0
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda10f2f7d7b4f690800000000000000
+      internalID: -7569222935581287713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10e04222571ef4c0800000000000000
+      internalID: -4251935356661735395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cfd91c2b1dcd6e0800000000000000
+      internalID: -1811342384427041665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 7
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeddd59c79f511be0800000000000000
+      internalID: -1508319294669333014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 7
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a814b16ad14f25560800000000000000
+      internalID: 7301166354099028362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 8
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b8569c9a9012f00800000000000000
+      internalID: 1090163209633368935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 9
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6c83c06af302fb0800000000000000
+      internalID: -4674666430808406287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 2
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413a02469fcedd970800000000000000
+      internalID: 8781435404313207572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 2
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1f3c425d67129d0800000000000000
+      internalID: -2800826835430805087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 5
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c460adfb28b48910800000000000000
+      internalID: 1838797046952256710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 5
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b29f59f8cc848030800000000000000
+      internalID: 3496074005551485616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 4
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9b5262801019830800000000000000
+      internalID: 4076040272258382321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 4
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1ae77af6572f640800000000000000
+      internalID: 5112277649430847990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 6
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c038c0b1d95ae2490800000000000000
+      internalID: -7769090212985273588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 6
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5228b3138f8c9820800000000000000
+      internalID: 2926371651018302046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 2
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766f7e9b295715700800000000000000
+      internalID: 527331904423720551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45eb4ff7edd699020800000000000000
+      internalID: 2349029483047337556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 5
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1e29b2b04a93b10800000000000000
+      internalID: 1961779480579203512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 5
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f6fb0d856ece2d0800000000000000
+      internalID: -3247967962107252898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 6
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46bbd4036ac64b7b0800000000000000
+      internalID: -5209419407930049692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 6
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ecffc595ae169a0800000000000000
+      internalID: -6241449939025539444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 8
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8defefbda5709860800000000000000
+      internalID: 7534651565700803978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 8
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19539ba714acfec0800000000000000
+      internalID: -3531767586195547875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 0
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6ad56a0e9f669f0800000000000000
+      internalID: -475417967381862672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 0
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c7062c47d6b3ce0800000000000000
+      internalID: -1424424508887892843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cef6470583444b90800000000000000
+      internalID: -7258602460782592316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island Boy Gamepad UI Asset Pack - Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 0
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649a3772b4cb94df0800000000000000
+      internalID: -195418077843445434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Island Boy Gamepad UI Asset Pack - Spritesheet_0: 5349864409721220315
+      Island Boy Gamepad UI Asset Pack - Spritesheet_1: -6954446925853019393
+      Island Boy Gamepad UI Asset Pack - Spritesheet_10: 2416468348174570848
+      Island Boy Gamepad UI Asset Pack - Spritesheet_11: 7880863631142155300
+      Island Boy Gamepad UI Asset Pack - Spritesheet_12: 8542151441407456070
+      Island Boy Gamepad UI Asset Pack - Spritesheet_13: -3520351449776927379
+      Island Boy Gamepad UI Asset Pack - Spritesheet_14: 5164878105857135369
+      Island Boy Gamepad UI Asset Pack - Spritesheet_15: 5403009968649098294
+      Island Boy Gamepad UI Asset Pack - Spritesheet_16: -3032899569592046070
+      Island Boy Gamepad UI Asset Pack - Spritesheet_17: 7516911407037089997
+      Island Boy Gamepad UI Asset Pack - Spritesheet_18: 3274433850119160325
+      Island Boy Gamepad UI Asset Pack - Spritesheet_19: -5075258089354014973
+      Island Boy Gamepad UI Asset Pack - Spritesheet_2: -2795388937399309878
+      Island Boy Gamepad UI Asset Pack - Spritesheet_20: 7082397087721243148
+      Island Boy Gamepad UI Asset Pack - Spritesheet_21: -3323387418821176351
+      Island Boy Gamepad UI Asset Pack - Spritesheet_22: -8947611778237512084
+      Island Boy Gamepad UI Asset Pack - Spritesheet_23: -5324272151201522881
+      Island Boy Gamepad UI Asset Pack - Spritesheet_24: -2619863288875016980
+      Island Boy Gamepad UI Asset Pack - Spritesheet_25: 1640972898074324588
+      Island Boy Gamepad UI Asset Pack - Spritesheet_26: -959869392678548430
+      Island Boy Gamepad UI Asset Pack - Spritesheet_27: -1469662537857035148
+      Island Boy Gamepad UI Asset Pack - Spritesheet_28: -4544358449661236774
+      Island Boy Gamepad UI Asset Pack - Spritesheet_29: 306411753352230039
+      Island Boy Gamepad UI Asset Pack - Spritesheet_3: 7196728484568688956
+      Island Boy Gamepad UI Asset Pack - Spritesheet_30: -142606020187118509
+      Island Boy Gamepad UI Asset Pack - Spritesheet_31: 7401576310962892347
+      Island Boy Gamepad UI Asset Pack - Spritesheet_32: 1292713836047915381
+      Island Boy Gamepad UI Asset Pack - Spritesheet_33: -7569222935581287713
+      Island Boy Gamepad UI Asset Pack - Spritesheet_34: -4251935356661735395
+      Island Boy Gamepad UI Asset Pack - Spritesheet_35: -1811342384427041665
+      Island Boy Gamepad UI Asset Pack - Spritesheet_36: -1508319294669333014
+      Island Boy Gamepad UI Asset Pack - Spritesheet_37: 7301166354099028362
+      Island Boy Gamepad UI Asset Pack - Spritesheet_38: 1090163209633368935
+      Island Boy Gamepad UI Asset Pack - Spritesheet_39: -4674666430808406287
+      Island Boy Gamepad UI Asset Pack - Spritesheet_4: -8904032892093709174
+      Island Boy Gamepad UI Asset Pack - Spritesheet_40: 8781435404313207572
+      Island Boy Gamepad UI Asset Pack - Spritesheet_41: -2800826835430805087
+      Island Boy Gamepad UI Asset Pack - Spritesheet_42: 1838797046952256710
+      Island Boy Gamepad UI Asset Pack - Spritesheet_43: 3496074005551485616
+      Island Boy Gamepad UI Asset Pack - Spritesheet_44: 4076040272258382321
+      Island Boy Gamepad UI Asset Pack - Spritesheet_45: 5112277649430847990
+      Island Boy Gamepad UI Asset Pack - Spritesheet_46: -7769090212985273588
+      Island Boy Gamepad UI Asset Pack - Spritesheet_47: 2926371651018302046
+      Island Boy Gamepad UI Asset Pack - Spritesheet_48: 527331904423720551
+      Island Boy Gamepad UI Asset Pack - Spritesheet_49: 2349029483047337556
+      Island Boy Gamepad UI Asset Pack - Spritesheet_5: 8143125637694737132
+      Island Boy Gamepad UI Asset Pack - Spritesheet_50: 1961779480579203512
+      Island Boy Gamepad UI Asset Pack - Spritesheet_51: -3247967962107252898
+      Island Boy Gamepad UI Asset Pack - Spritesheet_52: -5209419407930049692
+      Island Boy Gamepad UI Asset Pack - Spritesheet_53: -6241449939025539444
+      Island Boy Gamepad UI Asset Pack - Spritesheet_54: 7534651565700803978
+      Island Boy Gamepad UI Asset Pack - Spritesheet_55: -3531767586195547875
+      Island Boy Gamepad UI Asset Pack - Spritesheet_56: -475417967381862672
+      Island Boy Gamepad UI Asset Pack - Spritesheet_57: -1424424508887892843
+      Island Boy Gamepad UI Asset Pack - Spritesheet_58: -7258602460782592316
+      Island Boy Gamepad UI Asset Pack - Spritesheet_59: -195418077843445434
+      Island Boy Gamepad UI Asset Pack - Spritesheet_6: 5432319968221727640
+      Island Boy Gamepad UI Asset Pack - Spritesheet_7: -7979767539222140517
+      Island Boy Gamepad UI Asset Pack - Spritesheet_8: -54944004532949578
+      Island Boy Gamepad UI Asset Pack - Spritesheet_9: 3638499458177152984
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

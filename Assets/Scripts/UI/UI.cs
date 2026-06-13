@@ -10,6 +10,7 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject HowToPlayUI;
+    [SerializeField] private GameObject MobileControlUI;
     [SerializeField] private TextMeshProUGUI timeStatsText;
     [SerializeField] private TextMeshProUGUI killStatsText;
     [Space]
@@ -37,9 +38,11 @@ public class UI : MonoBehaviour
     private void Update()
     {
         HandleInput();
+        HandleMobileControls();
         if (!gameOver)
             timeText.text = Time.timeSinceLevelLoad.ToString("F2") + "s";
     }
+
 
     public void GameOver()
     {
@@ -121,6 +124,18 @@ public class UI : MonoBehaviour
         else
         {
             ResumeGame();
+        }
+    }
+
+    private void HandleMobileControls()
+    {
+        if (Application.isMobilePlatform && !gameOver && !paused)
+        {
+            MobileControlUI.SetActive(true);
+        }
+        else
+        {
+            MobileControlUI.SetActive(false);
         }
     }
 

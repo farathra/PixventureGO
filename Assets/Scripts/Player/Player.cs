@@ -80,14 +80,21 @@ public class Player : Entity
 
     private void HandleInput() // This method checks if the player has pressed the jump key (Space, W, or Up Arrow)
     {
-        xInput = Input.GetAxisRaw("Horizontal");
+        if (Application.isMobilePlatform)
+        {
+            return;
+        }
+        else
+        {
+            xInput = Input.GetAxisRaw("Horizontal");
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             Jump();
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.L) || Input.GetKeyDown(KeyCode.Mouse1))
         {
             HandleAttack();
         }
@@ -116,5 +123,20 @@ public class Player : Entity
     public int SendHealthInfo()
     {
         return currentHealth;
+    }
+
+    public void SetMobileInput(int direction)
+    {
+        xInput = direction;
+    }
+
+    public void MakeJump()
+    {
+        Jump();
+    }
+
+    public void MakeAttack()
+    {
+        HandleAttack();
     }
 }
