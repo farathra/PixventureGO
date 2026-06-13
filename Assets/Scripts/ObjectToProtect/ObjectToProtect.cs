@@ -5,6 +5,8 @@ public class ObjectToProtect : Entity
     private Transform player;
     public static ObjectToProtect instance;
 
+    [SerializeField] private AudioSource GirlHurtSFX;
+
     protected override void Awake()
     {
         base.Awake();
@@ -40,5 +42,18 @@ public class ObjectToProtect : Entity
     public int SendHealthInfo()
     {
         return currentHealth;
+    }
+
+    protected override void TakeDamage()
+    {
+        if (UI.instance.gameOver)
+        {
+            return;
+        }
+        else
+        {
+            GirlHurtSFX.Play();
+        }
+        base.TakeDamage();
     }
 }

@@ -64,7 +64,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    private void TakeDamage() // This method is responsible for handling the player's health when they take damage, it reduces the player's health by 1, checks if the player has died, and starts the damage feedback coroutine to change the player's material temporarily
+    protected virtual void TakeDamage() // This method is responsible for handling the player's health when they take damage, it reduces the player's health by 1, checks if the player has died, and starts the damage feedback coroutine to change the player's material temporarily
     {
         currentHealth = currentHealth - 1;
 

@@ -13,6 +13,9 @@ public class Player : Entity
     private float defaultMoveSpeed;
     private float defaultJumpForce;
 
+    [SerializeField] AudioSource SwordSlashSFX;
+    [SerializeField] AudioSource PlayerHurtSFX;
+
 
     protected override void Awake()
     {
@@ -55,9 +58,17 @@ public class Player : Entity
 
     protected override void HandleAttack() // This method triggers the attack animation if the player is grounded
     {
-        if (isGrounded)
+        if (UI.instance.gameOver || UI.instance.paused)
         {
-            anim.SetTrigger("attack");
+            return;
+        }
+        else
+        {
+            if (isGrounded)
+            {
+                SwordSlashSFX.Play();
+                anim.SetTrigger("attack");
+            }
         }
     }
 
@@ -138,5 +149,18 @@ public class Player : Entity
     public void MakeAttack()
     {
         HandleAttack();
+    }
+
+    protected override void TakeDamage()
+    {
+        if (UI.instance.gameOver)
+        { 
+            return; 
+        }
+        else
+        {
+            PlayerHurtSFX.Play();
+        }
+        base.TakeDamage();
     }
 }

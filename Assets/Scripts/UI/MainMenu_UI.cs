@@ -6,6 +6,8 @@ public class MainMenu_UI : MonoBehaviour
     [SerializeField] private GameObject CreditsUI;
     [SerializeField] private GameObject QuitUI;
 
+    [SerializeField] private AudioSource buttonClickSFX;
+
     private void Awake()
     {
         HowToPlayUI.SetActive(false);
@@ -15,6 +17,7 @@ public class MainMenu_UI : MonoBehaviour
 
     public void OpenHowToPlay()
     {
+        buttonClickSFX.Play();
         HowToPlayUI.SetActive(true);
         CreditsUI.SetActive(false);
         QuitUI.SetActive(false);
@@ -22,6 +25,7 @@ public class MainMenu_UI : MonoBehaviour
 
     public void OpenCredits()
     {
+        buttonClickSFX.Play();
         HowToPlayUI.SetActive(false);
         CreditsUI.SetActive(true);
         QuitUI.SetActive(false);
@@ -29,6 +33,7 @@ public class MainMenu_UI : MonoBehaviour
 
     public void OpenQuit()
     {
+        buttonClickSFX.Play();
         HowToPlayUI.SetActive(false);
         CreditsUI.SetActive(false);
         QuitUI.SetActive(true);
@@ -36,6 +41,7 @@ public class MainMenu_UI : MonoBehaviour
 
     public void CloseAll()
     {
+        buttonClickSFX.Play();
         HowToPlayUI.SetActive(false);
         CreditsUI.SetActive(false);
         QuitUI.SetActive(false);
@@ -43,11 +49,13 @@ public class MainMenu_UI : MonoBehaviour
 
     public void QuitGame()
     {
+        buttonClickSFX.Play();
         Application.Quit();
     }
 
     public void LoadGame()
     {
+        buttonClickSFX.Play();
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 }

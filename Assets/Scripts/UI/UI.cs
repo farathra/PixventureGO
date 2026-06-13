@@ -9,16 +9,21 @@ public class UI : MonoBehaviour
     [Header("UI Elements")]
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject pauseMenuUI;
-    [SerializeField] private GameObject HowToPlayUI;
     [SerializeField] private GameObject MobileControlUI;
     [SerializeField] private TextMeshProUGUI timeStatsText;
     [SerializeField] private TextMeshProUGUI killStatsText;
     [Space]
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI killCountText;
+
+    [SerializeField] AudioSource GameplayBGM;
+    [SerializeField] AudioSource GameOverBGM;
+    [SerializeField] AudioSource ButtonClickSFX;
+    [SerializeField] AudioSource PausedSFX;
+
     private int killCount = 0;
     public bool gameOver = false;
-    private bool paused = false;
+    public bool paused = false;
     private bool howToPlayActive = false;
     private bool firstLoad;
 
@@ -35,6 +40,12 @@ public class UI : MonoBehaviour
         EntityMoveAndJump(true);
     }
 
+    private void Start()
+    {
+        GameOverBGM.Stop();
+        GameplayBGM.Play();
+    }
+
     private void Update()
     {
         HandleInput();
@@ -48,6 +59,8 @@ public class UI : MonoBehaviour
     {
         if (!gameOver)
         {
+            GameplayBGM.Stop();
+            GameOverBGM.Play();
             gameOver = true;
             EntityMoveAndJump(false);
             gameOverUI.SetActive(true);
@@ -60,6 +73,8 @@ public class UI : MonoBehaviour
 
     public void TryAgain()
     {
+        GameOverBGM.Stop();
+        ButtonClickSFX.Play();
         gameOver = false;
         EntityMoveAndJump(true);
         killCount = 0;
@@ -80,6 +95,8 @@ public class UI : MonoBehaviour
     {
         if (!gameOver && !howToPlayActive)
         {
+            GameplayBGM.Pause();
+            PausedSFX.Play();
             paused = true;
             Time.timeScale = 0;
             EntityMoveAndJump(false);
@@ -89,10 +106,12 @@ public class UI : MonoBehaviour
 
     public void ResumeGame()
     {
+        ButtonClickSFX.Play();
         paused = false;
         Time.timeScale = 1;
         EntityMoveAndJump(true);
         pauseMenuUI.SetActive(false);
+        GameplayBGM.UnPause();
     }
 
     private void HandleInput()
@@ -109,7 +128,6 @@ public class UI : MonoBehaviour
 
     public void PlayGame()
     {
-        HowToPlayUI.SetActive(false);
         Time.timeScale = 1;
         howToPlayActive = false;
         firstLoad = false;
@@ -155,6 +173,7 @@ public class UI : MonoBehaviour
 
     public void MainMenu()
     {
+        ButtonClickSFX.Play();
         Time.timeScale = 0;
         SceneManager.LoadScene(0);
     }
