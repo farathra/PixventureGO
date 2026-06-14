@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class MainMenu_UI : MonoBehaviour
 {
-    [SerializeField] private GameObject HowToPlayUI;
+    private GameObject HowToPlayUI;
+    [SerializeField] private GameObject HowToPlayPC_UI;
+    [SerializeField] private GameObject HowToPlayMobile_UI;
     [SerializeField] private GameObject CreditsUI;
     [SerializeField] private GameObject QuitUI;
 
@@ -10,6 +12,14 @@ public class MainMenu_UI : MonoBehaviour
 
     private void Awake()
     {
+        if (Application.isMobilePlatform)
+        {
+            HowToPlayUI = HowToPlayMobile_UI.gameObject;
+        }
+        else
+        {
+            HowToPlayUI = HowToPlayPC_UI.gameObject;
+        }
         HowToPlayUI.SetActive(false);
         CreditsUI.SetActive(false);
         QuitUI.SetActive(false);
